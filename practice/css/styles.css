@@ -15,9 +15,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
-
-
 /* At the top of your CSS, define your colors */
 :root {
     --primary-color: #4d1979;      /* TCU Purple */
@@ -38,9 +35,6 @@ main section h2 {
     color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
 }
-
-
-
 
 /* =========================
    Header & Navigation
@@ -63,8 +57,6 @@ header h1 {
 nav {
     background-color: #3d1461;
     padding: 0.75rem;
-    display: flex;              /* Make nav a flex container */
-    justify-content: center;    /* Center the ul inside nav */
 }
 
 /* Style the navigation list */
@@ -94,9 +86,6 @@ nav a {
 nav a:hover {
     background-color: #4d1979;
 }
-
-
-
 /* =========================
    Main Content
    ========================= */
@@ -161,4 +150,21 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;     /* Smaller on mobile */
+    }
+
+    nav {
+        font-size: 0.9rem;
+    }
+
+    main section {
+        padding: 1rem;         /* Less padding on mobile */
+    }
 }
